@@ -1,0 +1,25 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-controller": "node controller.js",
+    "start-js-client": "node client.js",
+    "start-py-client": "python3 client.py",
+    "start": "concurrently \"npm run start-controller\" \"npm run start-js-client\" \"npm run start-py-client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1",
+    "socket.io-client": "^4.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
