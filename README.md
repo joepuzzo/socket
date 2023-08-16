@@ -1,6 +1,6 @@
 # Socket Example
 
-This project an example of how to make js and python clients talk to a js soket server. You would do this when you had some master controller that you want multiple services to subscribe to ( some running in js and some in python ).
+This project an example of how to make js and python clients talk to a js soket server or python socket server. You would do this when you had some master controller that you want multiple services to subscribe to ( some running in js and some in python ).
 
 ## Installation
 
@@ -31,3 +31,11 @@ With the virtual env activated we can now run the following to start the two cli
 ```bash
 npm start
 ```
+
+By default this will run with the js server. In order to run with the python server you can run the following command:
+
+```bash
+npm start -- --controller=py
+```
+
+Under the hood this is simply running the `start.sh` bash script which can take a `--controller` argument.
